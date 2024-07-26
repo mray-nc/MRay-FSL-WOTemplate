@@ -1,0 +1,27 @@
+/* .selectCard:active{
+border-color: #9AC8EB !important;
+border: 3px solid;
+} */
+
+.selectCard{
+border: 1px solid #DDDBDA !important;
+border-radius: 0.25rem !important;
+cursor: pointer;
+box-shadow: 0 2px 2px 0 rgb(0 0 0 / 10%);
+}
+
+
+
+.p-horizontal{
+	padding: 0 15px !important;
+}
+
+/*.selectCard:visited{
+border-color: #9AC8EB !important;
+border: 3px solid;
+} */
+
+.blue-br{
+	border:3px solid #9AC8EB !important;
+    border: 3px solid;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Second_Work_Order_Item__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Second Work Order Item</label>
+    <referenceTo>MRay_Work_Order_Template_Items__c</referenceTo>
+    <relationshipLabel>Work Order Template Dependencies (Second Work Order Item)</relationshipLabel>
+    <relationshipName>Work_Order_Template_Dependencies1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

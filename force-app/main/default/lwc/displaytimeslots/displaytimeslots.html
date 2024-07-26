@@ -1,0 +1,58 @@
+<template>
+    <div  style="margin-top:12px">
+    <template for:each={address} for:item="addresskey">
+	<article class="slds-card slds-text-color_weak selectCard" onclick={handleClick2} key={addresskey.serviceTIdfromApex} id={addresskey.serviceTIdfromApex}>
+		<div class="slds-card__body slds-card__body_inner p-horizontal" >
+			<div class="slds-grid slds-gutters">
+				<div class="slds-col slds-size_5-of-12">
+					<div class="slds-m-bottom_small" style="height:20px; font-size:14px">{addresskey.Distance} km</div>
+					<div class="slds-text-heading_small  slds-m-bottom_small"  style="font-size:16px">{addresskey.Name1}</div>
+					<div class="" style="font-size:14px">
+						<div> {addresskey.Street1}
+						</div>
+						<div> {addresskey.City1}, {addresskey.State1}
+						</div>
+						<div> {addresskey.Country1}
+						</div>
+
+					</div>
+
+				</div>
+				<div class="slds-col slds-size_3-of-12">
+					<div class=" slds-text-heading_small  slds-m-bottom_small" style="height:20px; ">Hours</div>
+                      
+					<div class=" "  style="font-size:14px">
+                          <template for:each={addresskey.timeslots} for:item="timekey">
+
+						<div key={timekey.Id} class="slds-m-bottom_xx-small"> {timekey.DayOfWeek}
+						</div>
+                          </template>
+                    </div>
+
+				</div>
+				<div class="slds-col slds-size_3-of-12">
+
+					<div class="slds-text-heading_small  slds-m-bottom_small" style="height:20px; ">
+
+					</div>
+					<div class=""  style="font-size:14px">
+                         <template for:each={addresskey.timeslots} for:item="timekey">
+
+						<div key={timekey.Id} class="slds-m-bottom_xx-small">
+                            <lightning-formatted-date-time value={timekey.StartTime} hour="numeric" minute="2-digit" time-zone="UTC"></lightning-formatted-date-time>-
+                             <lightning-formatted-date-time value={timekey.EndTime} hour="numeric" minute="2-digit" time-zone="UTC"></lightning-formatted-date-time>
+                        </div>
+                        </template>
+						
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+        
+
+	</article>
+    </template>
+</div>
+</template>

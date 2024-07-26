@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Type__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Work type used to select the service territories, used to schedule the appointment, and set the root appointment for the appointment dependency records.   There should only be one Work Order Template Item with this work type -- otherwise will need to change the logic in the flow to capture the first instance of the work type.</description>
+    <label>Work Type</label>
+    <referenceTo>WorkType</referenceTo>
+    <relationshipLabel>Work Order Templates</relationshipLabel>
+    <relationshipName>Work_Order_Templates</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

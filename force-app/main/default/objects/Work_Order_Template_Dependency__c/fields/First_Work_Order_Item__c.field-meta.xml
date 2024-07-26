@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Work_Order_Item__c</fullName>
+    <label>First Work Order Item</label>
+    <referenceTo>MRay_Work_Order_Template_Items__c</referenceTo>
+    <relationshipLabel>Work Order Template Dependencies</relationshipLabel>
+    <relationshipName>Work_Order_Template_Dependencies</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
